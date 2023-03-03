@@ -20,6 +20,8 @@ document.addEventListener('click',function(e){
     }
 })
 
+handlePizzaOrder()
+
 //handle the pizza
 function handlePizzaOrder(){
     order.push({
@@ -32,7 +34,9 @@ function handlePizzaOrder(){
 }
 
 function genOrder(){
-
+    if(order.length>1){
+        console.log("over1")
+    }
 }
 
 
