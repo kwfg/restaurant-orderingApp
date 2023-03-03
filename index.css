@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    width:600px;
+    margin: auto;
+    font-family: 'Smythe', cursive;
+    border:2px solid black;
+} 
+
+.brand{
+    background-image: url(images/brand.png);
+    background-size:100%;
+    height: 165px;
+    /*spacing between menu*/
+    margin-bottom: 50px;
+}
+
+.brand-title , .brand-slogans{
+    color: white;
+    font-weight: 400;
+    margin: 0;
+}
+.brand-title{
+    font-size:39px;
+    padding:25 0 10 40;
+}
+
+.brand-slogans{
+    margin-top:0px;
+    padding:0 0 0 40;
+    font-size:22px;
+}
+
+.menu{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.menu-img{
+    width:70px;
+    height:90px;
+    padding:30 30 30 40
+}
+
+.product , .product-materials , .product-price{
+    margin: 0px;
+}
+
+.product{
+    margin-top: 15px;
+    font-size:28px;
+    padding:15 0 5 5;
+}
+
+.product-materials{
+    color:#8B8B8B;
+    font-size:16px;
+    padding:0 0 5 5;
+}
+
+.product-price{
+    padding:10 0 5 5;
+    font-size:20px;
+}
+
+hr {
+    width:500px;
+    margin:0 auto;
+    color: #D2D2D2;
+}
+
+.btn-bg{
+    width: 50px;
+    height: 50px;
+    border:2px solid #DEDEDE;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 50 0 50 200;
+    display:flex;
+}
+
+.addProduct-Btn{
+    margin: 18 auto;
+}
+
+.container{
+    width:150px
+}
+
+.order{
+    margin: 40px;
+}
+
+.order-title{
+    text-align: center;
+    font-size:28px;
+    font-weight: 400;
+}
+.order-product,.totalPrice-title{
+    font-size:28px;
+    font-weight: 400;
+    width:450px;
+    padding-left:10px;
+}
+
+.order-list{
+    display:flex;
+}
+
+.order-price,.total-price{
+    margin: auto;
+    font-size:20px;
+}
+
+.complete-order{
+    display: flex;
+}
+
+.com-btn{
+    width:500px;
+    height:60px;
+    margin: 10 auto 40;
+    background-color: #16DB99;
+    color: white;
+    font-size:16px;
+    font-weight: 700;
+    font-family: 'Verdana';
+    border:none;
+    cursor: pointer;
+}
+
+#order-hr {
+    height:3px;
+    border:none;
+    width:500px;
+    margin:0 auto;
+    background-color: black;
+}
