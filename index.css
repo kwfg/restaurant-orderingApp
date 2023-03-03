@@ -73,7 +73,6 @@ hr {
     height: 50px;
     border:2px solid #DEDEDE;
     border-radius: 50%;
-    cursor: pointer;
     margin: 50 0 50 200;
     display:flex;
 }
@@ -82,12 +81,22 @@ hr {
     margin: 18 auto;
 }
 
+i{
+    font-size: 15px;
+    cursor: pointer;
+}
+
 .container{
     width:150px
 }
 
 .order{
     margin: 40px;
+}
+
+.remove{
+    color: #BBBBBB;
+    font-size:18px;
 }
 
 .order-title{
