@@ -79,6 +79,7 @@ hr {
 
 .addProduct-Btn{
     margin: 18 auto;
+    display:none;
 }
 
 i{
@@ -97,12 +98,16 @@ i{
 .remove{
     color: #BBBBBB;
     font-size:18px;
+    border:none;
+    background-color: white;
+    cursor: pointer;
 }
 
-.order-title{
+.payment-title{
     text-align: center;
     font-size:28px;
     font-weight: 400;
+    display:none;
 }
 .order-product,.totalPrice-title{
     font-size:28px;
@@ -114,6 +119,7 @@ i{
 .order-list{
     display:flex;
 }
+
 
 .order-price,.total-price{
     margin: auto;
@@ -143,4 +149,78 @@ i{
     width:500px;
     margin:0 auto;
     background-color: black;
+}
+
+.total-price-order-list{
+    display:flex;
+    margin: 0 auto;
+}
+.total-price{
+    padding:0 20
+}
+
+/* utility */
+.hidden{
+    display: none;
+}
+
+.modal {
+    display: none;
+    /*If set none or flex , it will disappear or appear*/
+  }
+.form-container{
+    position: fixed;
+    top:300;
+    bottom:0;
+    left:0;
+    right:0;
+    width:520px;
+    height:500px;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:5px;
+    box-shadow: 0px 0px 6px 2px #666;
+    
+}
+
+.pay-title{
+    font-family: Verdana;
+    
+}
+
+.name-input , .card-input , .ccv-input , .submit-btn{
+
+    font-family: Verdana;
+    width:450px;
+    height:65px ;
+    padding-left:25px;
+    font-size:20px;
+    border-radius:5px;
+    border:2px solid grey;
+}
+
+.submit-btn{
+    padding:0px;
+    font-family: Verdana;
+    color: white;
+    background-color: #16DB99;
+    border:none;
+    cursor: pointer;
+}
+
+
+
+.finish-payment{
+    text-align: center;
+    padding:15 0;
+    margin-top:30px;
+    margin-left:50px;
+    margin-right:50px;
+    background-color: #ECFDF5;
+    color:#065F46;
+    font-size:25px;
 }

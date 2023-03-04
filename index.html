@@ -17,31 +17,37 @@
                
             </div>
 
+                
+            </div>
            
-            <div class="order">
-                <h3 class="order-title">Your order</h3>
+            <div class="order" id="order">
 
-                <div class="order-list">
-                <h2 class="order-product">Pizza <span class="remove">remove</span></h2>
-                <h4 class="order-price">$14</h4>
+
+
+            </div>
+                <div class="total-price-order-list" id="total-price-order-list">
+
                 </div>
 
-                <div class="order-list">
-                <h2 class="order-product">Beer <span class="remove">remove</span></h2>
-                <h4 class="order-price">$12</h4>
-                 </div>
-
-                <hr id="order-hr">
-
-                <div class="order-list">
-                <h2 class="totalPrice-title">Total price:</h2>
-                <h4 class="total-price">$26</h4>
-                </div>
-                <!--end order-->
+            
+                <div class="complete-order" id="complete-order">
+              
             </div>
-            <div class="complete-order">
-                <button type="button" class="com-btn">Complete order</button>
+            
+            <div class="modal" id="modal">
+            <div class="form-container">
+                <form id="payment-form">
+                    <h3 class="pay-title">Enter card details</h3>
+                    <input type="text" class="name-input" id="name" name="name" placeholder="Enter card details" required><br><br>
+                    <input type="trext" pattern="\d*" maxlength="16" class="card-input" id="card" name="card" placeholder="Enter card number" required><br><br>
+                    <input type="text" pattern="\d*" maxlength="4" class="ccv-input" id="ccv" name="ccv" placeholder="Enter CVV" required><br><br>
+                    <input type="submit" class="submit-btn" value="Pay">
+                  </form>
             </div>
+        </div>
+        <div id="finish-payment-container">
+
+    </div>
 	<script src="index.js" type="module"></script>
     </body>
 </html>
