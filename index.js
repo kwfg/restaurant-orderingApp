@@ -21,13 +21,13 @@ document.addEventListener('click',function(e){
     if(e.target.id === '🍕'){
         console.log(order)
         console.log("Pizza")
-        handlePizzaOrder()
+        handleOrder(0,"Pizza",14)
     }else if(e.target.id === '🍔'){
         console.log("Hamburger")
-        handleHamburger()
+        handleOrder(1,"Ham",12)
     }else if(e.target.id === '🍺'){
         console.log("Beer")
-        handleBeer()
+        handleOrder(2,"Beer",12)
     }else if(e.target.dataset.pname){
         removeProduct(e.target.dataset.pname)
     }else if(e.target.id==='com-btn'){
@@ -35,6 +35,18 @@ document.addEventListener('click',function(e){
     }
 })
 
+function handleOrder(id,name,itemPrice){
+    order.push({
+        order_id:order.length,
+        id:id,
+        name:name,
+        price:itemPrice,
+    }) 
+    genOrder()
+    const price = calTotalPrice()
+    genTotalPrice(price)
+}
+/*
 
 //handle the pizza
 function handlePizzaOrder(){
@@ -74,6 +86,8 @@ function handleBeer(){
     const price = calTotalPrice()
     genTotalPrice(price)
 }
+
+*/
 
 //remove the product
 function removeProduct(remove_pname){
